@@ -1,0 +1,110 @@
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+	background-color: #bbb;
+}
+
+div.row {
+	margin: 10px 0;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+form {
+	padding: 20px;
+	border: 1px solid #800;
+	border-radius:10px;
+	box-shadow: 0 0 10px #000;
+	width: 580px;
+	margin: auto;
+	font-size: 1em;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+form input {
+	border:1px solid #bbb;
+	padding: 5px 10px;
+	border-radius:10px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+input[type=button] {
+	background-image: -moz-linear-gradient(top, #fff, #bbb);
+	background-image: -webkit-linear-gradient(top, #fff, #bbb);
+}
+
+input.button:focus {
+	box-shadow: 0 0 10px #bbb;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#fileInfo {
+	font-style: italic;
+	color: #800;
+}
+
+#progressBar {
+	height: 15px;
+	border: 1px solid #bbb;
+	display: none;
+	border-radius:10px;
+	background-image: -moz-linear-gradient(left, #0ff, #00f, #008);
+	background-image: -webkit-linear-gradient(left, #0ff, #00f, #008);
+}
+
+#uploadResponse {
+	overflow: hidden;
+	display: none;
+}
+
+.copy {
+	color: #088;
+	text-align: center;
+}
+
+form legend {
+	font-weight: bold;
+}
+
+form img {
+	max-width: 560px;
+}
+
+form pre {
+	width: 560px;
+	max-height: 256px;
+	font-family: monospace;
+	border: 1px inset #bbb;
+	background-color: #eee;
+	overflow: auto;
+	text-align: left;
+}
+
+#transferSpeedInfo {
+	width: 120px;
+}
+
+#timeRemainingInfo {
+	margin-left: 10px;
+}
+
+#transferBytesInfo {
+	text-align: right;
+}
