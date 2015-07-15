@@ -13,7 +13,7 @@ if(isset($_GET['download']) && trim($_GET['download']) != "")
 		<meta charset='UTF-8' />
 		<meta name="author" content="Hoàng Ân" />
 		<title>Hoàng Ân 's Uploader</title>
-		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
 		<link rel="stylesheet" type="text/css" href="css/Anstyle.css" />
