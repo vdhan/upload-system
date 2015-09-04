@@ -14,4 +14,3 @@ if(file_exists($_GET['file']))
 	header("Content-Disposition: attachment; filename=" . $basename);
 	readfile($file);
 }
-?>

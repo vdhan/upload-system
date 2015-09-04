@@ -133,20 +133,18 @@ if($_FILES["fileToUpload"]["size"] < 200000000)
 		</div>
 		
 		<p class='copy'><strong>Copyright &copy; 2012 Hoàng Ân</strong></p>
-		<p style='text-align:center;'><img src='../img/HTML5.png' width='64' height='64' alt='HTML5' title='HTML5' />
-		<img src='../img/CSS3.png' width='64' height='64' alt='CSS3' title='CSS3' /></p>
 	</body>
 </html>";
 		
 		file_put_contents($fdir . ".html", $content);
-		$fdir = 'http://vdhan/upload/?download=' . $fdir;
+		$fdir = 'http://localhost/upload-system/?download=' . $fdir;
 		
 		echo 
 "<p><label for='url'>Địa chỉ liên kết: </label><input id='url' type='text' size='30' readonly value='$fdir' /></p>
 <p>Mã QR: <img src='qrcode.php?text=$fdir' width='150' height='150' style='vertical-align: middle' /></p>
 
 <p style='margin-top:50px'><label for='htl'>Mã nhúng HTML: </label><input id='htl' readonly size='40' type='text' value='<a href=\"$fdir\"; target=\"_blank\">$fdir</a>' /></p>
-<p><label for='forum'>Mã nhúng diễn đàn: </label><input id='forum' size='40' readonly type=text' value='[URL=$fdir]" . $fdir . "[/URL]' /></p>
+<p><label for='forum'>Mã nhúng diễn đàn: </label><input id='forum' size='40' readonly type='text' value='[URL=$fdir]" . $fdir . "[/URL]' /></p>
 		
 <p style='margin-top:50px'>MD5: $md5</p>
 <p>SHA-1: $sha1</p>";
@@ -156,4 +154,3 @@ if($_FILES["fileToUpload"]["size"] < 200000000)
 		echo "Lỗi tải lên.</br>";
 	}
 }
-?> 

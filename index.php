@@ -14,8 +14,8 @@ if(isset($_GET['download']) && trim($_GET['download']) != "")
 		<meta name="author" content="Hoàng Ân" />
 		<title>Hoàng Ân 's Uploader</title>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/Anstyle.css" />
 		<script type="text/javascript" src="js/Anscript.js"></script>
 	</head>
@@ -60,7 +60,5 @@ if(isset($_GET['download']) && trim($_GET['download']) != "")
 		</form>
 		
 		<p class="copy"><strong>Copyright &copy; 2012 Hoàng Ân</strong></p>
-		<p class="copy"><img src="../img/HTML5.png" width="64" height="64" alt="HTML5" title="HTML5" />
-		<img src="../img/CSS3.png" width="64" height="64" alt="CSS3" title="CSS3" /></p>
 	</body>
 </html>

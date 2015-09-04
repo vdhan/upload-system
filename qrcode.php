@@ -5,4 +5,3 @@ if(isset($_GET['text']) && trim($_GET['text']) != "")
 	$text = $_GET['text'];
 	QRcode::png($text);
 }
-?>
